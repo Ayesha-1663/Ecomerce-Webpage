@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    padding: 0;
     font-family: Arial;
     border: border-box;
 }
@@ -8,8 +9,9 @@
     background-color: black;
     color: white;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
 }
 .nav-logo{
     height: 50px;
@@ -205,7 +207,7 @@ ul a{
 }
 .logo{
      background-image: url("Your\ paragraph\ text.png");
-    height: 70px;
+    height: 50px;
     width: 100%;
     background-size: cover;
     width: 110px;
@@ -228,6 +230,55 @@ ul a{
      padding-top: 5px;
 
 }
+
+
+@media (max-width: 1000px) {
+
+    .box {
+        width: 45%;
+    }
+
+    .nav-search {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .navbar {
+        justify-content: center;
+        gap: 10px;
+    }
+}
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-search {
+        width: 100%;
+    }
+
+    .panel {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .hero-section {
+        height: 250px;
+    }
+
+    .foot-panel2 {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
 
 
 
